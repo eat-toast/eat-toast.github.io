@@ -103,10 +103,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "박이삭"
+  name             : "Park isaac"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "안녕하세요 깃허브 블로그는 처음입니다"
-  location         : "왕십리, Seoul"
+  bio              : "Hello world !"
+  location         : "Seoul Korea"
   email            : "toastls93@naver.com"
   links:
     - label: "Email"

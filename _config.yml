@@ -103,11 +103,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "박이삭"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "안녕하세요 깃허브 블로그는 처음입니다"
+  location         : "왕십리, Seoul"
+  email            : "toastls93@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

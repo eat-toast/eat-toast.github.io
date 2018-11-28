@@ -37,6 +37,7 @@ test$Current_floor<- floor1
 test[idx,'Current_floor'] <- c(3,13,6,1)
 test$Current_floor<- as.numeric(test$Current_floor)
 
+
 #Claim_price 0인 데이터 수정
 idx<- which(data$Claim_price <= 1000)
 data[idx,'Claim_price'] <- mean(data[-idx,'Claim_price'])
@@ -168,6 +169,12 @@ test$Total_building_auction_area <-log(test$Total_building_auction_area)
 data$date_diff<- as.numeric(as.Date(data$Final_auction_date) - as.Date(data$Appraisal_date))
 test$date_diff<- as.numeric(as.Date(test$Final_auction_date) - as.Date(test$Appraisal_date))
 
+#파생변수 생성
+plot(data$Total_land_auction_area * data$Current_floor / data$Total_floor, log(data$Hammer_price))
+plot(test$Total_land_auction_area *  test$Current_floor / test$Total_floor, log(test$Total_appraisal_price))
+
+data$masaka<- data$Total_land_auction_area * data$Current_floor / data$Total_floor
+test$masaka<- test$Total_land_auction_area *  test$Current_floor / test$Total_floor
 
 #data에서 필요없는 정보들 지우기
 data<-subset(data, select = -c(Auction_key,Auction_class,Close_result,Final_result,addr_li,addr_bunji1, addr_bunji2,road_bunji1, road_bunji2,addr_etc,road_name
@@ -744,7 +751,7 @@ final[,2]<-exp(pred_gbm)
 
 write.csv(final, 'GBM_20181126.csv',fileEncoding="UTF-8", row.names = FALSE)
 
-train2<- train[-1212,]
+train2<- train[-1113,]
 fit<- lm(Hammer_price ~ . , data = train)
 library(MASS)
 fit1 <- lm(Hammer_price ~ ., train2)
@@ -757,4 +764,4 @@ plot(back)
 plot(forward)
 
 
-summary(fit)
+summary(back)

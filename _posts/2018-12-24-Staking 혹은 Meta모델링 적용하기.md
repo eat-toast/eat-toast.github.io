@@ -1,7 +1,7 @@
 ---
 title: "Staking 혹은 Meta모델링 적용하기"
 date: 2018-12-24 00:33:28 -0400
-categories: study
+categories: 
 ---
 
 # 1. stacking에 관하여

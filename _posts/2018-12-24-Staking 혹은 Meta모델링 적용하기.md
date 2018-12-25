@@ -106,10 +106,10 @@ poly_svm <- predict(poly.svm.cv$best.model, test_mat)
 
 
 ## 2.1.4 Base Model 시각화
-<img src="/resources/stacking_KNN.png" width="300">
-<img src="/resources/stacking_SVM_poly.png" width="300">
-<img src="/resources/stacking_SVM_radial.png" width="300">
-<img src="/resources/stacking_RF.png" width="300">
+<img src="/resources/stacking_KNN.png" width="500">
+<img src="/resources/stacking_SVM_poly.png" width="500">
+<img src="/resources/stacking_SVM_radial.png" width="500">
+<img src="/resources/stacking_RF.png" width="500">
 ## 1.3 실습
 
 데이터는 [이곳에서][MLPB] 받을 수 있다

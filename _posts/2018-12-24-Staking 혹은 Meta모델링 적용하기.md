@@ -117,6 +117,7 @@ poly_svm <- predict(poly.svm.cv$best.model, test_mat)
 ## 2.2 Meta model 혹은 Level 1 모델
 
 2.1 에서 Base 모델을 선정하고 hyper paraneter를 잘 튜닝 했다면 꽤 찮은 결과가 나왔을 것이다.
+
 하지만, 각자 잘 맞추는 영역이 다르니, 이를 통합해 보자.
 
 ## 2.2.1 Meta Model 선정

@@ -33,7 +33,8 @@ categories: study
 ***
 <img src="/resources/stacking_dart.PNG" width="600">
 
- [원본링크][interview] 위 사진은 1.2.1 가정 1번의 예시가 잘 담겨있다.
+ [원본링크][interview] 위 사진은 `1.2.1 가정` 1번의 예시가 잘 담겨있다.
+ 
   완벽한 알고리즘은 존재하지 않으며 각각의 장점을 살려보자!
 
 `KNN: 중앙에서 높은 정확도  &  SVM: 가장자리에서 높은 정확도`
@@ -134,6 +135,17 @@ ACC는 좀전 SVM-poly보다 좋아 지지 않았다. ~~이 친구가 워낙 잘
 
     SVM-poly의 모습과 Meta로 사용한 RF의 모습이 담긴 것 같다. 
 
+
+## 2.2.3 마무리
+
+1. 발전 방향
+    1. Base Model 선정 자동화 
+    2. Base Model을 변수 선택처럼 Stack시 자동화
+    3. 다양한 Meta model 선정
+    
+2. 아쉬운 점
+    1. 정확한 이유 없이 Stacking 하는 법만 알게 되었다.
+    
 
 # 3 실습
 

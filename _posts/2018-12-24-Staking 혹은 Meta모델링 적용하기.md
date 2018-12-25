@@ -33,12 +33,31 @@ categories: study
 ***
 <img src="/resources/staking_dart.PNG" width="600">
 
- [원본링크][interview] 위 사진은 1번의 예시가 잘 담겨있다. 
+ [원본링크][interview] 위 사진은 1.2.1 가정 1번의 예시가 잘 담겨있다.
+  완벽한 알고리즘은 존재하지 않으며 각각의 장점을 살려보자!
 
 `KNN: 중앙에서 높은 정확도  &  SVM: 가장자리에서 높은 정확도`
 
 
+```R
+# 자료 출처:
+# http://blog.kaggle.com/2016/12/27/a-kagglers-guide-to-model-stacking-in-practice/
 
+options(scipen=10)
+
+library(data.table)
+library(caret)
+library(dplyr)
+library(e1071)
+library(class)
+library(randomForest)
+
+
+setwd("D:/MLPB-master/Problems/Classify Dart Throwers")
+# data load
+train <- fread("_Data/train.csv")
+test <- fread("_Data/test.csv")
+```
 
 
 [kaggle-home]: https://www.kaggle.com/

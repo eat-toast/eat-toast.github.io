@@ -9,12 +9,12 @@ categories: study
 ## 1.1 stacking이란?
 [Kaggle][kaggle-home] 상위권 랭커들이 사용하는 알고리즘으로 여러 모델들의 장점을 하나로 합해 새로운 모델을 만드는 방법이다.
 
-<img src="/resources/staking_structure.PNG" width="600">
+<img src="/resources/staking_structure.PNG" width="650">
     (간단한 stacking의 구조)
 
 
 ## 1.2 왜?
- 기본적으로 다음과 같은 가정을 한다.
+  다음과 같은 가정과 장단점이 존재한다.
 
 ### 1.2.1. 가정 
 
@@ -39,16 +39,19 @@ categories: study
 `KNN: 중앙에서 높은 정확도  &  SVM: 가장자리에서 높은 정확도`
 
 
+# 2. Stacking 설명
 
-데이터는 [이곳][MLPB]에서 받을 수 있다
+## 2.1 Base Model 혹은 Level 0 모델
+
+Base Model에 해당되는 알고리즘이 딱히 정해져 있지는 않다. 
+다만, 위에서 본 다트 예제 처럼 특정한 부분의 정확도가 높다면 쓸만하다고 할 수 있다.
+~~ 전체적인 정확도가 낮더라도!!! ~~
 
 
+## 1.3 실습
 
-​```R
-def print_hi(name):
-  print("hello", name)
-print_hi('Tom')
-​```
+데이터는 [이곳에서][MLPB] 받을 수 있다
+
 
 ```R
 # 자료 출처:
@@ -68,7 +71,17 @@ setwd("D:/MLPB-master/Problems/Classify Dart Throwers")
 # data load
 train <- fread("_Data/train.csv")
 test <- fread("_Data/test.csv")
+
+# 타겟 변수 factor로 변경
+train$Competitor<- as.factor(train$Competitor)
+test$Competitor<- as.factor(test$Competitor)
 ```
+
+
+
+
+
+
 
 
 [kaggle-home]: https://www.kaggle.com/

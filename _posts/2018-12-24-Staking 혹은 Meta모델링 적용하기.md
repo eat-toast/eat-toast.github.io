@@ -45,8 +45,40 @@ categories: study
 
 Base Model에 해당되는 알고리즘이 딱히 정해져 있지는 않다. 
 다만, 위에서 본 다트 예제 처럼 특정한 부분의 정확도가 높다면 쓸만하다고 할 수 있다.
-~~ 전체적인 정확도가 낮더라도!!! ~~
+~~전체적인 정확도가 낮더라도!!!~~
 
+Base Model을 구성할 때, 
+
+    1. 알고리즘을 선정 (KNN, SVM 등)
+    2. Hyper Parameter 튜닝
+단계를 거쳐야 한다.
+
+
+먼저 데이터를 불러온다.
+
+```R
+setwd("D:/MLPB-master/Problems/Classify Dart Throwers")
+# data load
+train <- fread("_Data/train.csv")
+test <- fread("_Data/test.csv")
+
+# 타겟 변수 factor로 변경
+train$Competitor<- as.factor(train$Competitor)
+test$Competitor<- as.factor(test$Competitor)
+```
+
+## 2.1.1 KNN
+ 어떤 K가 (1<=k<=10) 뛰어난지 알 수 없어 Cross Validation을 통해 k를 선택한다.
+ 
+ ```R
+ #Base Model 1: kNN
+
+set.seed(7)
+knn.cv <- tune.knn(x = train_mat, y = factor(train$Competitor), k = seq(1, 40, by = 2),
+                   tunecontrol = tune.control(sampling = "cross"), cross = 10)
+knn <- knn(train_mat, test_mat, factor(train$Competitor), k = knn.cv$best.parameters[, 1])
+
+ ```
 
 ## 1.3 실습
 

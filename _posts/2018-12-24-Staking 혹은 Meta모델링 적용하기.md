@@ -9,7 +9,7 @@ categories: study
 ## 1.1 stacking이란?
 [Kaggle][kaggle-home] 상위권 랭커들이 사용하는 알고리즘으로 여러 모델들의 장점을 하나로 합해 새로운 모델을 만드는 방법이다.
 
-<img src="/resources/staking_structure.PNG" width="650">
+<img src="/resources/stacking_structure.PNG" width="650">
     (간단한 stacking의 구조)
 
 
@@ -31,7 +31,7 @@ categories: study
     1. 연산량이 증가한다
 
 ***
-<img src="/resources/staking_dart.PNG" width="600">
+<img src="/resources/stacking_dart.PNG" width="600">
 
  [원본링크][interview] 위 사진은 1.2.1 가정 1번의 예시가 잘 담겨있다.
   완벽한 알고리즘은 존재하지 않으며 각각의 장점을 살려보자!
@@ -106,10 +106,10 @@ poly_svm <- predict(poly.svm.cv$best.model, test_mat)
 
 
 ## 2.1.4 Base Model 시각화
-<img src="/resources/staking_KNN.png" width="300">
-<img src="/resources/staking_SVM_ploy.png" width="300">
-<img src="/resources/staking_SVM_radial.png" width="300">
-<img src="/resources/staking_RF.png" width="300">
+<img src="/resources/stacking_KNN.png" width="300">
+<img src="/resources/stacking_SVM_ploy.png" width="300">
+<img src="/resources/stacking_SVM_radial.png" width="300">
+<img src="/resources/stacking_RF.png" width="300">
 ## 1.3 실습
 
 데이터는 [이곳에서][MLPB] 받을 수 있다

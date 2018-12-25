@@ -4,22 +4,25 @@ date: 2018-12-24 00:33:28 -0400
 categories: study
 ---
 
-# stacking
+# stacking이란?
 
-[Kaggle][kaggle-home] 상위권 랭커들이 사용하는 알고리즘 방식으로 여러 모델들의 장점을 하나로 합해 새로운 모델을 만드는 방식이다.
+[Kaggle][kaggle-home] 상위권 랭커들이 사용하는 알고리즘으로 여러 모델들의 장점을 하나로 합해 새로운 모델을 만드는 방법이다.
 
-<img src="/resources/staking_structure.PNG" width="300">
+<img src="/resources/staking_structure.PNG" width="600">
+(간단한 stacking의 구조)
 
-## 왜?
-기본적으로 다음과 같은 가정을 한다.
+
+### 왜?
+ 기본적으로 다음과 같은 가정을 한다.
 
 1. 모든 모델은 `mistake`를 가지고 있다. --> 완벽한 모델은 존재하지 않는다.
-   아무리 Xgboost, lightGBM 등 앙상블 계열 알고리즘이 뛰어나도 알고리즘 구조 때문에 놓치는 부분이 존재한다는 것을 인정한다.
+   아무리 Xgboost, lightGBM 등 앙상블 계열 알고리즘이 뛰어나도 알고리즘 구조상 놓치는 부분이 존재한다는 것을 인정한다.
    
-2. 잘 맞추는 부분을 통합 한다면 더 잘 맞추게 된다.
+2. 잘 맞추는 부분을 통합 한다면 더 잘 맞추게 될 것이다.
 
 
-가정이 꽤 직관적이라 이견이 없을 것 같다. 
+<img src="/resources/staking_dart.PNG" width="600">
+
 
 
 

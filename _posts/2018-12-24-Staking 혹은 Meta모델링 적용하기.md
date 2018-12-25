@@ -44,18 +44,20 @@ categories: study
 ## 2.1 Base Model 혹은 Level 0 모델
 
 Base Model에 해당되는 알고리즘이 딱히 정해져 있지는 않다. 
-다만, 위에서 본 다트 예제 처럼 특정한 부분의 정확도가 높다면 쓸만하다고 할 수 있다.
+
+다만, 위에서 본 다트 예제 처럼 특정한 부분의 정확도가 높다면 쓸만하다.
+
 ~~전체적인 정확도가 낮더라도!!!~~
 
-Base Model을 구성할 때, 
+Base Model을 구성할 때, 다음 2가지 단계를 거쳐야 한다.
 
     1. 알고리즘을 선정 (KNN, SVM 등)
     2. Hyper Parameter 튜닝
-단계를 거쳐야 한다.
+
 
 
 먼저 데이터를 불러온다.
-
+데이터는 [이곳에서][MLPB] 받을 수 있다
 ```R
 setwd("D:/MLPB-master/Problems/Classify Dart Throwers")
 # data load
@@ -68,7 +70,7 @@ test$Competitor<- as.factor(test$Competitor)
 ```
 
 ## 2.1.1 KNN
- 어떤 K가 (1<=k<=10) 뛰어난지 알 수 없어 Cross Validation을 통해 k를 선택한다.
+ 어떤 K가 (1<=k<=40) 뛰어난지 알 수 없어 Cross Validation을 통해 k를 선택한다.
  
  ```R
  #Base Model 1: kNN
@@ -80,6 +82,34 @@ knn <- knn(train_mat, test_mat, factor(train$Competitor), k = knn.cv$best.parame
 
  ```
 
+## 2.1.2 SVM - poly
+ 마찬가지로 SVM에 대해서도 진행한다.
+ 
+```R
+# Base Model 2: SVM with Polynomial Kernel
+
+set.seed(7)
+poly.svm.cv <- tune.svm(x = train_mat, y = factor(train$Competitor), kernel = "polynomial",
+                        degree = c(2, 3, 4), coef0 = c(0.1, 0.5, 1, 2),
+                        cost = c(0.001, 0.01, 0.1, 1, 3, 5),
+                        tunecontrol = tune.control(sampling = "cross"))
+poly_svm <- predict(poly.svm.cv$best.model, test_mat)
+```
+
+## 2.1.3 Base Model 결과
+
+    Accuracy(kNN): 0.7027 
+    Accuracy(SVM, Polynomial): 0.8649
+    Accuracy(SVM, Radial): 0.7568 
+    Accuracy(Random Forest): 0.7838
+    (SVM-Radial과 Random Forest는 아래 코드 참조)
+
+
+## 2.1.4 Base Model 시각화
+<img src="/resources/staking_KNN.PNG" width="300">
+<img src="/resources/staking_SVM_ploy.PNG" width="300">
+<img src="/resources/staking_SVM_radial.PNG" width="300">
+<img src="/resources/staking_RF.PNG" width="300">
 ## 1.3 실습
 
 데이터는 [이곳에서][MLPB] 받을 수 있다

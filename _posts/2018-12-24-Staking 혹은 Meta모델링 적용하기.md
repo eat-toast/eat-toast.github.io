@@ -6,7 +6,9 @@ categories: study
 
 # stacking
 
-[Kaggle][kaggle-home] 상위권 랭커들이 사용하는 알고리즘 방식으로 여러 모델들의 장점들을 하나로 합해 새로운 모델을 만드는 방식이다.
+[Kaggle][kaggle-home] 상위권 랭커들이 사용하는 알고리즘 방식으로 여러 모델들의 장점을 하나로 합해 새로운 모델을 만드는 방식이다.
+
+<img src="/resources/staking_structure.PNG" width="300">
 
 ## 왜?
 기본적으로 다음과 같은 가정을 한다.

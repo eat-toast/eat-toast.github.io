@@ -1,5 +1,5 @@
 ---
-title: "stacking"
+title: "Staking 혹은 Meta모델링 적용하기"
 date: 2018-12-24 00:33:28 -0400
 categories: study
 ---
@@ -128,7 +128,9 @@ poly_svm <- predict(poly.svm.cv$best.model, test_mat)
 
     Accuracy(Stacked Model): 0.8649
 
-ACC는 좀전 SVM-poly보다 좋아 지지 않았다. ~~이 친구가 워낙 잘 맞춘 이유도 한몫 한 것 같다.~~
+ACC는 좀전 SVM-poly보다 좋아 지지 않았다. 
+
+~~이 친구가 워낙 잘 맞춘 이유도 한몫 한 것 같다.~~
 
 ## 2.2.2 Meta Model 시각화
 

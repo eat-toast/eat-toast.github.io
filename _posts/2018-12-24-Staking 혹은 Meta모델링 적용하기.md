@@ -1,4 +1,4 @@
---
+---
 title: "stacking"
 date: 2018-12-24 00:33:28 -0400
 categories: study
@@ -25,10 +25,10 @@ categories: study
 <img src="/resources/staking_dart.PNG" width="600">
 
  위 사진은 1번의 예시가 잘 담겨있다.
- --
+---
  KNN: 중앙에서 높은 정확도
  SVM: 가장자리에서 높은 정확도
- --
+---
 
 [원본링크][interview]
 

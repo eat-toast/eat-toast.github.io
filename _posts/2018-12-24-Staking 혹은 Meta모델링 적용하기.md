@@ -39,6 +39,17 @@ categories: study
 `KNN: 중앙에서 높은 정확도  &  SVM: 가장자리에서 높은 정확도`
 
 
+
+데이터는 [이곳][MLPB]에서 받을 수 있다
+
+
+
+​```R
+def print_hi(name):
+  print("hello", name)
+print_hi('Tom')
+​```
+
 ```R
 # 자료 출처:
 # http://blog.kaggle.com/2016/12/27/a-kagglers-guide-to-model-stacking-in-practice/
@@ -62,3 +73,4 @@ test <- fread("_Data/test.csv")
 
 [kaggle-home]: https://www.kaggle.com/
 [interview]: http://blog.kaggle.com/2016/12/27/a-kagglers-guide-to-model-stacking-in-practice/
+[MLPB]: https://github.com/ben519/MLPB

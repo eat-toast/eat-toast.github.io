@@ -27,4 +27,4 @@
 [1월]: https://github.com/eat-toast/temp/blob/master/_posts/2019-01-01-%201월%20주차별%20공부내용.md
 [2월]: https://github.com/eat-toast/temp/blob/master/_posts/2019-02-01-%202월%20주차별%20공부내용.md
 [stacking]: https://github.com/eat-toast/temp/blob/master/_posts/2018-12-24-Staking%20혹은%20Meta모델링%20적용하기.md
-[MLPT]: https://github.com/eat-toast/temp/tree/master/ML%20PPT
+[MLPT]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/README.md

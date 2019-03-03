@@ -1,4 +1,4 @@
-# eat-toast.github.io
+# View all을 눌러 주세요
 
 # 블로그 공간입니다.
 

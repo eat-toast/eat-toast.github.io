@@ -52,9 +52,17 @@ PDF로 올리지 않는 이유는, PT 하단 설명란에 있는 추가 설명 �
   스터디원이 소개해준 논문으로 모델 해석의 끝판왕이라 생각한다.<br>
   - 장점: 빠른 모델 해석과 클래스별 변수 중요도 파악가능<br>
   - 단점: 모델 해석이지 데이터 해석은 아니다. <br>
-  [binary_class 쥬피터 노트북][binary_class], [multiple_class 쥬피터 노트북][multiple_class]
+  [binary_class 쥬피터 노트북][binary_class]<br>
+  [multiple_class 쥬피터 노트북][multiple_class]
 
-
+## 10.[SELU][SELU] <br>
+  PPT가 아닌 주피터 노트북 형식으로 내용을 준비했다.<br>
+  2번에 정리한 How Dose BN을 보기전 읽었던 논문이다.<br>
+  BN을 사용하지 않아도 activation function으로 BN효과를 내주는 SELU 다. <br>
+  - 장점: BN을 굳이 안써도 된다. <br>
+  - 단점: 효과가 드라마틱 하게 나타나지 않는다.<br>
+          오히려 마음의 안심을 얻고 싶다면 BN을 쓰는 것을 추천
+  
 
 [Promotion Impact]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/promotionImpact_20190222.pptx
 [How Dese Batch Norm Help Optimization]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/How%20Dese%20Batch%20Norm%20Help%20Optimization_박이삭20190304.pptx
@@ -67,3 +75,4 @@ PDF로 올리지 않는 이유는, PT 하단 설명란에 있는 추가 설명 �
 [LIME 쥬피터]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/SHAP%20VS%20LIME.ipynb
 [binary_class]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/SHAP_value%20-%20%20binary%20class.ipynb
 [multiple_class]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/SHAP_value%20multi%20class.ipynb
+[SELU]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/Leaky_ReLU%2C%20ELU%20%2B%20Batch%2C%20SELU.ipynb

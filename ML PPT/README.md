@@ -35,9 +35,8 @@ PDF로 올리지 않는 이유는, PT 하단 설명란에 있는 추가 설명 �
 ## 6.PRML - 패턴인식 머신러닝<br>
   비숍이 지은 책으로 베이지안에 대해 설명한다. <br>
   18년도 하반기 스터디를 진행하면서 작성한 PPT 와 R코드 첨부<br>
-  PPT - 어디갔지... <br>
-  [2.3 R코드][2.3 R코드]<br>
-  [3.3 R코드][3.3 R코드]<br>
+  [2.3 PDF][2.3 PDF]     &      [2.3 R코드][2.3 R코드]<br>
+  [3.3 PDF][3.3 PDF]     &      [3.3 R코드][3.3 R코드]<br>
   
 
 ---
@@ -89,4 +88,6 @@ PDF로 올리지 않는 이유는, PT 하단 설명란에 있는 추가 설명 �
 [multiple_class]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/SHAP_value%20multi%20class.ipynb
 [SELU]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/Leaky_ReLU%2C%20ELU%20%2B%20Batch%2C%20SELU.ipynb
 [2.3 R코드]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/베이지안.R
+[2.3 PDF]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/2.3.6-2.3.9_박이삭.pdf
 [3.3 R코드]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/resouces/베이지안_1.R
+[3.3 PDF]:https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/3.3-3.4_박이삭.pdf

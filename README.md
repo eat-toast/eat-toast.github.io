@@ -23,6 +23,9 @@
 
 - Stacking 내용 정리 [바로가기][stacking] <br>
   자주 사용하는 앙상블 기법 중 Stacking 내용을 정리
+  
+- 프로그래머를 위한 베이지안 [바로가기][notion] <br>
+  팩을 보며 내용 정리 
 
 [소심]: https://github.com/eat-toast/eat-toast.github.io/blob/master/_posts/2019-02-01-%20소심한%20나의%20답장.md
 [1월]: https://github.com/eat-toast/temp/blob/master/_posts/2019-01-01-%201월%20주차별%20공부내용.md
@@ -30,3 +33,4 @@
 [3월]: https://github.com/eat-toast/eat-toast.github.io/blob/master/_posts/2019-03-01-%203월%20주차별%20공부내용.md
 [stacking]: https://github.com/eat-toast/temp/blob/master/_posts/2018-12-24-Staking%20혹은%20Meta모델링%20적용하기.md
 [MLPT]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/README.md
+[notion]: https://www.notion.so/toastls93/fad6654d140841f98020189482fadfc4

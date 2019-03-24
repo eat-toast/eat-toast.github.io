@@ -25,7 +25,7 @@
   자주 사용하는 앙상블 기법 중 Stacking 내용을 정리
   
 - 프로그래머를 위한 베이지안 [바로가기][notion] <br>
-  팩을 보며 내용 정리 
+  책을보며 내용 정리 위주
 
 [소심]: https://github.com/eat-toast/eat-toast.github.io/blob/master/_posts/2019-02-01-%20소심한%20나의%20답장.md
 [1월]: https://github.com/eat-toast/temp/blob/master/_posts/2019-01-01-%201월%20주차별%20공부내용.md

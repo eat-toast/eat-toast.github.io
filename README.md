@@ -17,6 +17,8 @@
 - 2월 공부한 내용 정리 [바로가기][2월]
 - 3월 공부한 내용 정리 [바로가기][3월]
 - 4월 공부한 내용 정리 [바로가기][4월]
+---
+- 2020년 2월 [바로가기] [2020_2월]
 
 
 
@@ -33,6 +35,7 @@
 [2월]: https://github.com/eat-toast/temp/blob/master/_posts/2019-02-01-%202월%20주차별%20공부내용.md
 [3월]: https://github.com/eat-toast/eat-toast.github.io/blob/master/_posts/2019-03-01-%203월%20주차별%20공부내용.md
 [4월]: https://github.com/eat-toast/eat-toast.github.io/blob/master/_posts/2019-04-01-%204월%20주차별%20공부내용.md
+[2020_2월]: https://github.com/eat-toast/eat-toast.github.io/blob/master/_posts/2020-02%20TIL
 [stacking]: https://github.com/eat-toast/temp/blob/master/_posts/2018-12-24-Staking%20혹은%20Meta모델링%20적용하기.md
 [MLPT]: https://github.com/eat-toast/eat-toast.github.io/blob/master/ML%20PPT/README.md
 [notion]: https://www.notion.so/toastls93/fad6654d140841f98020189482fadfc4
